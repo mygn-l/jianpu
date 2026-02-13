@@ -1,0 +1,22 @@
+html,
+body {
+  overscroll-behavior: none;
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  border: 2px solid black;
+  margin: 10px auto;
+  display: block;
+}
+
+#toolbar {
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  border-top: 2px solid black;
+  display: block;
+  width: 100%;
+  padding: 10px;
+}

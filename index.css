@@ -7,7 +7,7 @@ body {
 
 canvas {
   border: 2px solid black;
-  margin: 10px auto;
+  margin: 50px auto 200px;
   display: block;
 }
 
@@ -16,7 +16,15 @@ canvas {
   bottom: 0;
   background-color: white;
   border-top: 2px solid black;
-  display: block;
+  display: flex;
+  flex-direction: row;
   width: 100%;
   padding: 10px;
+  height: 15%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#toolbar > div {
+  margin: 0 20px 0;
 }

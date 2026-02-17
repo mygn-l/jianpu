@@ -4,11 +4,43 @@
     <link href="./index.css" rel="stylesheet" />
   </head>
   <body>
-    <canvas id="canvas" width="500" height="500"></canvas>
+    <canvas id="canvas" width="816" height="1056"></canvas>
 
     <div id="toolbar">
-      <input id="mode" type="range" min="0" max="2" value="0" step="1" />
-      <div id="mode-display">Mode: insert</div>
+      <div>
+        <div id="note-display"></div>
+        <div id="dot-display"></div>
+      </div>
+
+      <div>
+        <input id="mode" type="range" min="0" max="3" value="1" step="1" />
+        <div id="mode-display"></div>
+      </div>
+
+      <div>
+        <input id="duration" type="range" min="0" max="7" value="4" step="1" />
+        <div id="duration-display"></div>
+      </div>
+
+      <div>
+        <div>Title: <input id="title" /></div>
+        <div>Author: <input id="author" /></div>
+      </div>
+
+      <div>
+        <button id="print-button" tabindex="-1">Print Score</button>
+        <br />
+        <button id="json-button" tabindex="-1">Export JSON</button>
+        <br />
+        <div>Import JSON</div>
+        <input type="file" id="json-input" />
+        <br />
+        <button id="save-button" tabindex="-1">Save Score Locally</button>
+        <br />
+        <div id="saved-scores"></div>
+      </div>
+
+      <div><a href="./instructions.html" target="_blank">User Manual</a></div>
     </div>
 
     <script src="./index.js"></script>
